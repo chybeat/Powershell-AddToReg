@@ -3,13 +3,20 @@ Funtion to add on Windows registry data passing a "@={path;name;value;type}" obj
 
 Just copy, use, modify, download, pirate, or make anything with this code. The file (addtoreg.psm1) can be used with next command from a .ps1 File:
 
+
+
+
 ```Powershell
 Import-Module -DisableNameChecking "D:\rive\and\wherever-the-file-is\addToReg.psm1"
 ```
 
 The "_-DisableNameChecking_" paramter is because all functions called from other files needs to be started with a verb and hyphen... and I don't like a function called like "add-on-Windows-Registry-from-object-or-string" and other (for delete) called "remove-on-Windows-Registry-from-object-or-string" :pray: . At last if parameter not writed the console will you alert about the function name.
 
+### Hpw To use
 
+```Powershell
+addToReg($reg_file_string_or_object)
+```
 
 ## To know:
 Function to insert or delete on Windows registry data or a lot of very much data from *"like .reg file"* string
