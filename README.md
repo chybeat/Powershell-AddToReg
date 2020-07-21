@@ -12,7 +12,7 @@ Import-Module -DisableNameChecking "D:\rive\and\wherever-the-file-is\addToReg.ps
 
 The "_-DisableNameChecking_" paramter is because all functions called from other files needs to be started with a verb and hyphen... and I don't like a function called like "add-on-Windows-Registry-from-object-or-string" and other (for delete) called "remove-on-Windows-Registry-from-object-or-string" :pray: . At last if parameter not writed the console will you alert about the function name.
 
-### Hpw To use
+### How To use
 
 ```Powershell
 addToReg($reg_file_string_or_object)
