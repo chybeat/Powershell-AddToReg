@@ -66,7 +66,7 @@ function addToReg{
                 $line	= ""
                 $type	= ""
                 $continueOnNextLine = $false
-                $lines = $text -Split ("`r`n")
+                $lines = $regData -Split ("`r`n")
 
                 ForEach ($line in $lines){
                     #Si es una línea vacía o empieza con ";" (comentario) se debe omitir al igual que si es la primera linea de un archivo.reg
