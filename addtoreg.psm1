@@ -233,6 +233,7 @@ function addToReg{
         switch($regData.type.toLower()){
            "string"        {
                 #Eliminar el Escape de strings (\\ y \") de testo de exportación del registro
+                $regData.val = $regData.val.Trim('"')
                 $regData.val = $regData.val.Replace('\"','"')
                 $regData.val = $regData.val.Replace("\\","\")
                 $regData.val = [string]$regData.val.Replace('""','"')
