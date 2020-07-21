@@ -3,14 +3,11 @@ Funtion to add on Windows registry data passing a "@={path;name;value;type}" obj
 
 Just copy, use, modify, download, pirate, or make anything with this code. The file (addtoreg.psm1) can be used with next command from a .ps1 File:
 
-
-
-
 ```Powershell
 Import-Module -DisableNameChecking "D:\rive\and\wherever-the-file-is\addToReg.psm1"
 ```
 
-The "_-DisableNameChecking_" paramter is because all functions called from other files needs to be started with a verb and hyphen... and I don't like a function called like "add-on-Windows-Registry-from-object-or-string" and other (for delete) called "remove-on-Windows-Registry-from-object-or-string" :pray: . At last if parameter not writed the console will you alert about the function name.
+The "_-DisableNameChecking_" parameter is because all functions called from other files needs to be started with a verb and hyphen... and I don't like a function called like "add-on-Windows-Registry-from-object-or-string" and other (for delete) called "remove-on-Windows-Registry-from-object-or-string" :pray: . At last if parameter not writed the console will you alert about the function name.
 
 ### How To use
 
@@ -39,7 +36,9 @@ or
 
 `Path=HKCU\Control Panel\Quick Actions\Control Center\Unpinned`
 
-In a .reg file line like: 'binario=hex:e0'
+In a .reg file a line like: '[HKEY_CURRENT_USER\Control Panel\Quick Actions\Control Center\Unpinned]'
+
+Using a .reg line for changes value like binario=hex:e0 :
 
 **Name**: The value to create or change
 
