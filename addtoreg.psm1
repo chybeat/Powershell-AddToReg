@@ -203,7 +203,10 @@ function addToReg{
 
         #Eliminar del registro
         if($regData.type -eq "del"){
-            if(($regData.name -eq "") -and (Test-Path $regData.Path)){
+            if(!(Test-Path $regData.Path)){
+                return
+            }
+            if($regData.name -eq ""){
                 #Si no hay name se trata de una ruta completa de registro a eliminar
                 Remove-Item $regData.path -Recurse -Force
             }else{
