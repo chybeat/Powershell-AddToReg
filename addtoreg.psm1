@@ -166,9 +166,8 @@ function addToReg{
 
                 #Fin de proceso si es un string
                 #Al ser un String no se necesita realizar ninguna acción posterior. Al detectar un string 
-                #la funcion prepara el texto y ejecuta cada línea de nuevo en la misma función de forma recursiva. Por eso "exit"
-
-                exit
+                #la funcion prepara el texto y ejecuta cada línea de nuevo en la misma función de forma recursiva. Por eso "return"
+                return
             }
             default {
                 "`"$regData_in`" No es un 'Hashtable' o 'un string'"
